@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "configs": {
+    "tls_analysis": {
+      "name": "tls_analysis",
+      "description": "TLS traffic analysis with handshake details",
+      "captureFilter": "port 443",
+      "displayFilter": "tls.handshake",
+      "outputFormat": "json",
+      "maxPackets": 500,
+      "interface": "en0"
+    },
+    "integration_test": {
+      "name": "integration_test",
+      "description": "Short capture for integration testing",
+      "captureFilter": "",
+      "displayFilter": "",
+      "outputFormat": "json",
+      "maxPackets": 100,
+      "timeout": 10,
+      "interface": "en0"
+    }
+  }
+}

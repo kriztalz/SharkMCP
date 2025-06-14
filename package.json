@@ -1,0 +1,41 @@
+{
+  "name": "SharkMCP",
+  "version": "0.1.0",
+  "description": "A Wireshark MCP server for network packet analysis",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "start": "node dist/index.js",
+    "test": "pnpm run test:integration",
+    "test:unit": "echo 'Unit tests not yet implemented'",
+    "test:integration": "pnpm run build && node test/integration.test.js",
+    "test:direct": "pnpm run build && node test-client.js"
+  },
+  "keywords": [
+    "sharkmcp",
+    "wireshark",
+    "mcp",
+    "network",
+    "security",
+    "packet-analysis",
+    "tshark"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@types/node": "24.0.0",
+    "axios": "1.9.0",
+    "which": "5.0.0",
+    "zod": "^3.25.61"
+  },
+  "devDependencies": {
+    "@types/which": "^3.0.4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.1",
+    "typescript": "^5.8.3"
+  }
+}
