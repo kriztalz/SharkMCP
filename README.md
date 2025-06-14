@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides network packet capture and analysis capabilities through Wireshark/tshark integration. Designed for AI assistants to perform network security analysis, troubleshooting, and packet inspection.
 
+<a href="https://glama.ai/mcp/servers/@kriztalz/SharkMCP">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@kriztalz/SharkMCP/badge" alt="SharkMCP MCP server" />
+</a>
+
 This server was thought for situations where you want your agent to debug a program that sends requests and verify the packet traffic, allowing the following workflow:
 
 - Start recording packets
